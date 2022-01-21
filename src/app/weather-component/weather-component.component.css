@@ -1,0 +1,82 @@
+#divWeather{
+    display : block;
+    border-radius: 10px;
+    width:350px;
+    height:350px;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg,rgba(0,0,0,1) 0%,rgba(8,7,42,1));
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    
+}
+.weatherRow{
+    display: block;
+    margin: 0 auto;
+    width : fit-content;
+}
+
+.sun {
+    margin-top: 10px;
+    color : yellow;
+    filter : drop-shadow(1px 1px 10px yellow );
+    
+}
+
+.moon {
+    margin-top: 10px;
+    color : white;
+    filter : drop-shadow(1px 1px 10px white );
+    
+}
+
+.cloudDiv{
+    margin-top:-40px;
+}
+
+.cloud{
+    color : rgb(104,175,197);
+    filter: drop-shadow(1px 1px 5px rgb(104,175,197));
+    animation-name: cloudMovement;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes cloudMovement {
+
+    from{margin-left: -55px;}
+    to{margin-left: 65px;}
+}
+
+button {
+    background-color: transparent;
+    font-family: Roboto, "Roboto", sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    border: none;
+    padding: 0.4em;
+    opacity: 0.6
+}
+button:focus {
+    outline: none
+}
+.btn-random {
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px
+}
+.btn-random:hover {
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.4)
+}
+
+body {
+    background: #E0E0E0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(right, #E0E0E0, #E0E0E0);
+    background: -moz-linear-gradient(right, #E0E0E0, #E0E0E0);
+    background: -o-linear-gradient(right, #E0E0E0, #E0E0E0);
+    background: linear-gradient(to left, #E0E0E0, #E0E0E0);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
+  }
